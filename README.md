@@ -7,3 +7,8 @@
  - `docker compose up -d`
 -  `docker compose exec app rails db:create`：DB作成
 - `http://localhost`にアクセス
+
+## railsコマンド実行
+`docker compose run --rm app bundle exec rails xxx`
+`docker-compose run --rm api bundle exec rails db:migrate` マイグレーション
+`docker-compose run --rm api bundle exec rails db:seed` seeder実行
