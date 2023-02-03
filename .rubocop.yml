@@ -1,0 +1,133 @@
+# RuboCop Configuration
+# https://docs.rubocop.org/rubocop/configuration.html
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+inherit_gem:
+  prettier: rubocop.yml
+
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Metrics/MethodLength:
+  Enabled: false
+  # Max: 30
+Style/OptionalBooleanParameter:
+  Enabled: false
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: false
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/RedundantReturn:
+  Enabled: false
+
+Style/PreferredHashMethods:
+  Enabled: false
+
+Style/TrivialAccessors:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/Next:
+  Enabled: false
+
+Style/SymbolProc:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Performance/Sum:
+  Enabled: false
+
+Style/ParenthesesAroundCondition:
+  Enabled: false
+
+Style/SoleNestedConditional:
+  Enabled: false
+
+Style/RedundantParentheses:
+  Enabled: false
+
+Style/StringConcatenation:
+  Enabled: false
+
+Style/YodaCondition:
+  Enabled: false
+
+Style/RedundantSort:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/EmptyElse:
+  Enabled: false
+
+Style/CollectionCompact:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
+
+Layout/FirstHashElementIndentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 100 # 80を推奨としたいがそれより緩く
+
+Layout/IndentationStyle:
+  IndentationWidth: 2
+  EnforcedStyle: spaces
+
+Metrics/AbcSize:
+  Max: 30 # default 17
+
+Metrics/CyclomaticComplexity:
+  Max: 10 # default 7
+
+Metrics/BlockLength:
+  Max: 40 # default 25
+
+Performance/MapCompact:
+  Enabled: false
+
+Rails/Blank:
+  Enabled: false
+
+Rails/PluralizationGrammar:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/DynamicFindBy:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
